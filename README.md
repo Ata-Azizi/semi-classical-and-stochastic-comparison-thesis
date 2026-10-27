@@ -1,3 +1,13 @@
+## 🎓 Master's Thesis
+
+**Title:** Vacuum Decay in the Semiclassical and Stochastic Approaches
+
+**Institution:** University of Göttingen, Germany  
+**Supervisor:** Prof. Laura Covi  
+**Second Examiner:** Prof. Jens Niemeyer
+
+This repository contains the original numerical implementations developed for the master's thesis. The code is preserved in its original form to maintain consistency with the calculations and results presented in the thesis.
+
 # semi-classical-and-stochastic-comparison-thesis
 
 A comprehensive numerical framework for studying vacuum decay, comparing **Semi-Classical (Coleman)** methodologies with the **Stochastic Framework**. This research investigates phase transitions in contexts ranging from flat spacetime to gravity-inclusive models (thin-wall approximation) and from 1D scalar fields to 2D coupled systems.
@@ -36,12 +46,21 @@ Implements the Langevin/Fokker-Planck approach by solving the associated Schröd
 ---
 
 ## 💻 Technical Requirements
-To run these scripts, you will need Python 3.8+ and the following scientific libraries:
+
+The numerical implementations use Python and the following scientific libraries:
+
+- NumPy
+- SciPy
+- Matplotlib
+- SymPy
+- CosmoTransitions (for semiclassical bounce calculations)
+
+Install the core dependencies:
 
 ```bash
-# Core Scientific Stack
 pip install numpy scipy matplotlib sympy
+```
 
-# Specialized Solvers
-# Ensure CosmoTransitions is installed in your python path
-# Repository: [https://github.com/cloveras/CosmoTransitions](https://github.com/cloveras/CosmoTransitions)
+For the specialized bounce solver, see the [CosmoTransitions GitHub repository](https://github.com/clwainwright/CosmoTransitions).
+
+The scripts were developed for the thesis calculations and may require adjustments to paths, parameters, or package versions when executed in a different environment.
